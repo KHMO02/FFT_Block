@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<h1>Instrumentation Results for my_8fft_mex</h1>
+<h2>Summary</h2>
+<p>To re-create this report:</p>
+<pre>  showInstrumentationResults my_8fft_mex -proposeFL -defaultDT numerictype(1,12)</pre>
+
+<p>MEX-function name:</p>
+<pre>my_8fft_mex</pre>
+<p>Timestamp:</p>
+<pre>Sun Aug 17 15:02:58 2025</pre>
+<p>To open this report from the MATLAB command line:</p>
+<pre> web('-browser','/home/kali2/FFT_Block/matlab/instrumentation/my_8fft_mex/html/printable.html')</pre>
+
+
+<h2>Function my_8fft </h2>
+
+<pre>
+function X = my_8fft(x)
+twiddle = exp(-1j*2*pi*(0:8-1)/8);
+X=x;
+
+%stage1
+for i = 0:3 
+x(i+1) = X(i+1) + X(i+4+1);
+x(i+1+4) = (X(i+1) - X(i+1+4))*twiddle(i+1);
+end
+X=x;
+
+%stage2
+x(1:4) = my_4fft(X(1:4));
+x(5:8) = my_4fft(X(5:8));
+X=x;
+
+% stage 3
+x(1:2) = my_2fft(X(1:2));
+x(3:4) = my_2fft(X(3:4));
+x(5:6) = my_2fft(X(5:6));
+x(7:8) = my_2fft(X(7:8));
+X=x;
+
+
+%bit reversing
+x(2) = X(5);
+x(4) = X(7);
+x(5) = X(2);
+x(7) = X(4);
+X=x;
+
+end
+</pre>
+<table style="border-collapse: collapse; border: solid;" border="1">
+<caption><b>Logged Variables for my_8fft</b></caption>
+<tr><th>Variable</th><th>Type</th><th>Size</th><th>Class</th><th>Complex</th><th>Proposed<br>Signedness</th><th>Proposed<br>WL</th><th>Proposed<br>FL</th><th>Always<br>Whole Number</th><th>SimMin</th><th>SimMax</th></tr>
+<tr><td><code>X</code></td><td><code>Output</code></td><td><code>8&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>7</code></td><td><code>No</code></td><td><code>-9.579755678691871</code></td><td><code>8.589724741655168</code></td></tr>
+<tr><td><code>i</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>No</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>0</code></td><td><code><b>Yes</b></code></td><td><code>0</code></td><td><code>3</code></td></tr>
+<tr><td><code>twiddle</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;8</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>10</code></td><td><code>No</code></td><td><code>-1</code></td><td><code>1</code></td></tr>
+<tr><td><code>x</code></td><td><code>Input</code></td><td><code>8&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>7</code></td><td><code>No</code></td><td><code>-9.579755678691871</code></td><td><code>8.589724741655168</code></td></tr>
+</table>
+
+<h2>Function my_4fft </h2>
+
+<pre>
+function X = my_4fft(x)
+X=x;
+twiddle = exp(-1j*2*pi*(0:4-1)/4);
+for i = 0:1
+    x(i+1) = X(i+1) + X(i+1+2);
+    x(i+1+2) = (X(i+1)- X(i+2+1))*twiddle(i+1);
+end
+X=x;
+end
+</pre>
+<table style="border-collapse: collapse; border: solid;" border="1">
+<caption><b>Logged Variables for my_4fft</b></caption>
+<tr><th>Variable</th><th>Type</th><th>Size</th><th>Class</th><th>Complex</th><th>Proposed<br>Signedness</th><th>Proposed<br>WL</th><th>Proposed<br>FL</th><th>Always<br>Whole Number</th><th>SimMin</th><th>SimMax</th></tr>
+<tr><td><code>X</code></td><td><code>Output</code></td><td><code>4&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>8</code></td><td><code>No</code></td><td><code>-6.4330675172769975</code></td><td><code>6.779273828844444</code></td></tr>
+<tr><td><code>i</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>No</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>0</code></td><td><code><b>Yes</b></code></td><td><code>0</code></td><td><code>1</code></td></tr>
+<tr><td><code>twiddle</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;4</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>10</code></td><td><code>No</code></td><td><code>-1</code></td><td><code>1</code></td></tr>
+<tr><td><code>x</code></td><td><code>Input</code></td><td><code>4&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>8</code></td><td><code>No</code></td><td><code>-6.4330675172769975</code></td><td><code>6.779273828844444</code></td></tr>
+</table>
+
+<h2>Function my_2fft </h2>
+
+<pre>
+function X = my_2fft(x)
+X=x;
+twiddle = exp(-1j*2*pi*(0:2-1)/2);
+x(1) = X(1) + X(2);
+x(2) = (X(1)- X(2))*twiddle(0+1);
+X=x;
+end
+</pre>
+<table style="border-collapse: collapse; border: solid;" border="1">
+<caption><b>Logged Variables for my_2fft</b></caption>
+<tr><th>Variable</th><th>Type</th><th>Size</th><th>Class</th><th>Complex</th><th>Proposed<br>Signedness</th><th>Proposed<br>WL</th><th>Proposed<br>FL</th><th>Always<br>Whole Number</th><th>SimMin</th><th>SimMax</th></tr>
+<tr><td><code>X</code></td><td><code>Output</code></td><td><code>2&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>7</code></td><td><code>No</code></td><td><code>-9.579755678691871</code></td><td><code>8.589724741655168</code></td></tr>
+<tr><td><code>twiddle</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;2</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>10</code></td><td><code>No</code></td><td><code>-1</code></td><td><code>1</code></td></tr>
+<tr><td><code>x</code></td><td><code>Input</code></td><td><code>2&nbsp;x&nbsp;1</code></td><td><code>double</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>7</code></td><td><code>No</code></td><td><code>-9.579755678691871</code></td><td><code>8.589724741655168</code></td></tr>
+</table>
+</html>
