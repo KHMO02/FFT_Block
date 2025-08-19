@@ -1,4 +1,6 @@
 clear; clc; close all
+fid_in  = fopen('input_bin.txt', 'w');
+fid_out = fopen('output_bin.txt', 'w');
 
 %design parameters
 L = 8;
@@ -12,11 +14,15 @@ for seed = 1: nSeeds
     x_double = randn(L,1) + 1i* randn(L,1);
     x= cast(x_double, 'like', T.x);
 
-    if seed==1
-        buildInstrumentedMex my_8fft -args {x,T}
-    end
+%     if seed==1
+%         buildInstrumentedMex my_8fft -args {x,T}
+%     end
     %alorithm
-    y = my_8fft_mex(x,T);
+    y = my_8fft(x,T);
+    for k=1:8
+    fprintf(fid_in,  '%s\n', bin(x(k)));
+    fprintf(fid_out, '%s\n', bin(y(k)));
+    end
     
     %Expexted result
     y_exp = fft(x_double);
@@ -28,3 +34,6 @@ xlabel('seed', 'FontSize', 14); xlabel('error', 'FontSize', 14);
 signalPower = mean(abs(y_exp).^2);
 errorPower = mean(abs(double(y) - y_exp).^2);
 sqnr = 10 * log10(signalPower / errorPower);
+
+fclose(fid_in);
+fclose(fid_out);

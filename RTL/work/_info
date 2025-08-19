@@ -1,0 +1,263 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/questasim64_2021.1/examples
+T_opt
+!s110 1755618775
+V>m2b0:aX3`]h97fP:05B12
+Z2 04 2 4 work tb fast 0
+=11-9c2dcdc3a64c-68a49dd6-38b-4528
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.1;73
+R1
+T_opt1
+!s110 1755552450
+V_@O2l3;Y6:m4DT4Zi67ee2
+04 4 4 work test fast 0
+=1-9c2dcdc3a64c-68a39ac2-1fe-44a8
+R3
+Z6 o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1755554570
+VZ8XfkbRWFS@a>L06HeR_J3
+R2
+=1-9c2dcdc3a64c-68a3a30a-3b-2774
+R3
+R6
+R4
+n@_opt2
+R5
+R1
+vbutterfly
+Z7 !s110 1755619187
+!i10b 1
+!s100 B6:ImMbL6XjWJzb0LR2NF3
+I:n0:G=m]=lK2CP>C5cVnW3
+Z8 dC:/ADI/project/FFT_Block/RTL
+Z9 w1755574612
+Z10 8butterfly.v
+Z11 Fbutterfly.v
+!i122 131
+Z12 L0 1 64
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z15 !s108 1755619187.000000
+!s107 top_tb.v|top.v|fft_2.v|fft_4.v|fft_8.v|butterfly.v|
+Z16 !s90 -reportprogress|300|butterfly.v|fft_8.v|fft_4.v|fft_2.v|top.v|top_tb.v|
+!i113 0
+Z17 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vfft_2
+R7
+!i10b 1
+!s100 MLIVkzaehkgzjN[hbc^Mh0
+IDH`TSFfo^BAPP3UMD0i1o0
+R8
+w1755600163
+8fft_2.v
+Ffft_2.v
+!i122 131
+R12
+R13
+R14
+r1
+!s85 0
+31
+R15
+Z18 !s107 top_tb.v|top.v|fft_2.v|fft_4.v|fft_8.v|butterfly.v|
+R16
+!i113 0
+R17
+R4
+vfft_4
+R7
+!i10b 1
+!s100 7O_9[_oUfe^WIm<YSzZQU1
+I7i49A3?kcddYW_obZc^WL3
+R8
+w1755575168
+8fft_4.v
+Ffft_4.v
+!i122 131
+L0 1 73
+R13
+R14
+r1
+!s85 0
+31
+R15
+R18
+R16
+!i113 0
+R17
+R4
+vfft_8
+R7
+!i10b 1
+!s100 g52:9bTJd5F3<]h4b[g=k0
+I2HR^5332PU?S5obgX=9MU2
+R8
+w1755563471
+8fft_8.v
+Ffft_8.v
+!i122 131
+L0 1 83
+R13
+R14
+r1
+!s85 0
+31
+R15
+R18
+R16
+!i113 0
+R17
+R4
+vtb
+R7
+!i10b 1
+!s100 S5bdE]_93ZB5nZIhT`;jZ3
+IIKmHhb_<PWncElRKd4n4G2
+R8
+w1755604537
+8top_tb.v
+Ftop_tb.v
+!i122 131
+L0 1 55
+R13
+R14
+r1
+!s85 0
+31
+R15
+R18
+R16
+!i113 0
+R17
+R4
+vtb_butterfly
+R7
+!i10b 1
+!s100 R8]O6A9h5R3o6S8`Qi7Ma1
+IK6K5J[?=<1c1`47e6h>S_1
+R8
+R9
+R10
+R11
+!i122 131
+L0 70 24
+R13
+R14
+r1
+!s85 0
+31
+R15
+R18
+R16
+!i113 0
+R17
+R4
+vtest
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1755554560
+!i10b 1
+!s100 zjA]XlzAR[>SOzGHz6RKI3
+IdoIAhM<A<8TQ;0VfAd?GG1
+S1
+R8
+w1755552403
+8C:/ADI/project/FFT_Block/RTL/test.sv
+FC:/ADI/project/FFT_Block/RTL/test.sv
+!i122 84
+L0 1 32
+R13
+R14
+r1
+!s85 0
+31
+!s108 1755554560.000000
+!s107 C:/ADI/project/FFT_Block/RTL/test.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/ADI/project/FFT_Block/RTL/test.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vtop
+R7
+!i10b 1
+!s100 7m>ezi9ME=eGdXSjm[XTS3
+I]Re]Qz3lSlg^6bgAVYgoL2
+R8
+w1755618768
+8top.v
+Ftop.v
+!i122 131
+L0 1 14
+R13
+R14
+r1
+!s85 0
+31
+R15
+R18
+R16
+!i113 0
+R17
+R4
