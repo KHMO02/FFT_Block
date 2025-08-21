@@ -1,5 +1,5 @@
-function X = my_8fft(x,T) %#codegen
-%% This is a DIF 8-point FFT with ordering the output to compare with MATLAB built-in FFT function
+function X = my_8fft_unordered(x,T) %#codegen
+%% This is a DIF 8-point FFT with unordered output to generate TestVectors
 twiddle = cast(exp(-1j*2*pi*(0:8-1)/8), 'like', T.twiddle);
 X= cast(trim(x,2), 'like', T.X);
 Temp = cast(trim(x,2), 'like', T.X);
@@ -34,13 +34,6 @@ Temp(5:6) = my_2fft(X(5:6),T);
 Temp(7:8) = my_2fft(X(7:8),T);
 X=Temp;
 
-
-%bit reversing to make the output in order
-Temp(2) = X(5);
-Temp(4) = X(7);
-Temp(5) = X(2);
-Temp(7) = X(4);
-X=Temp;
 end
 
 function X = my_4fft(x,T)
