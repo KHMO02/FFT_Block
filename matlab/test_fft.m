@@ -14,11 +14,11 @@ for seed = 1: nSeeds
     x_double = randn(L,1) + 1i* randn(L,1);
     x= cast(x_double, 'like', T.x);
 
-%     if seed==1
-%         buildInstrumentedMex my_8fft -args {x,T}
-%     end
+    if seed==1
+        buildInstrumentedMex my_8fft -args {x,T}
+    end
     %alorithm
-    y = my_8fft(x,T);
+    y = my_8fft_mex(x,T);
     for k=1:8
     fprintf(fid_in,  '%s\n', bin(x(k)));
     fprintf(fid_out, '%s\n', bin(y(k)));
