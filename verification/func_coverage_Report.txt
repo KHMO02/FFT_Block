@@ -1,0 +1,17 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /pack
+=== Design Unit: work.pack
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Covergroups                      1        na        na    78.90%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins        256       202        54    78.90%
+
+
+TOTAL COVERGROUP COVERAGE: 78.90%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 78.90%
+

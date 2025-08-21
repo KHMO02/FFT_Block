@@ -20,20 +20,9 @@ always @(*) begin
     sum_r = x1_r + x2_r;    
     sum_i = x1_i + x2_i;
 
-    //saturation logic as in matlab;
-    if (sum_r >  13'sd2047) 
-        X1_r = 12'sd2047;
-    else if (sum_r < -13'sd2048) 
-        X1_r = -12'sd2048;
-    else 
-        X1_r = sum_r[11:0];
 
-    if (sum_i >  13'sd2047) 
-        X1_i = 12'sd2047;
-    else if (sum_i < -13'sd2048) 
-        X1_i = -12'sd2048;
-    else 
-        X1_i = sum_i[11:0];
+    X1_r = sum_r[11:0];
+    X1_i = sum_i[11:0];
 
 
     ac = (x1_r - x2_r) * w_r;
@@ -44,50 +33,10 @@ always @(*) begin
     s_r = (ac - bd) >>> 10;
     s_i = (ad + bc) >>> 10;
 
-    //saturation logic as in matlab
-    if (s_r >  24'sd2047)
-        X2_r = 12'sd2047;
-    else if (s_r < -24'sd2048)
-        X2_r = -12'sd2048;
-    else
-        X2_r = s_r[11:0];
-
-    if (s_i >  24'sd2047)
-        X2_i = 12'sd2047;
-    else if (s_i < -24'sd2048)
-        X2_i = -12'sd2048;
-    else
-        X2_i = s_i[11:0];
+    X2_r = s_r[11:0];
+    X2_i = s_i[11:0];
 
 end
     
 endmodule
 
-`timescale 1ns/1ps
-
-`timescale 1ns/1ps
-
-module tb_butterfly;
-
-    reg  signed [11:0] x1_r, x1_i, x2_r, x2_i;
-    reg  signed [11:0] w_r, w_i;
-    wire signed [11:0] X1_r, X1_i, X2_r, X2_i;
-
-    butterfly dut (
-        .x1_r(x1_r), .x1_i(x1_i),
-        .x2_r(x2_r), .x2_i(x2_i),
-        .w_r(w_r),   .w_i(w_i),
-        .X1_r(X1_r), .X1_i(X1_i),
-        .X2_r(X2_r), .X2_i(X2_i)
-    );
-
-    initial begin
-        x1_r = 12'b010110000000;
-        x1_i = 12'b001010000000;
-        x2_r = 12'b010100000000;
-        x2_i = 12'b000010000000;
-        w_r = 12'b000011000000;
-        w_i = 12'b001000000000;
-        #5 $display("%12b %12b %12b %12b",X1_r,X1_i,X2_r,X2_i);
-    end
-endmodule

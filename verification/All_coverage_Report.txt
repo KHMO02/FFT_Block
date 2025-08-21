@@ -1,0 +1,1397 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb/i1
+=== Design Unit: work.FFT_if
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       5         5         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/i1 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File FFT_if.sv
+    9               1                          1     
+    10              1                          1     
+    10              2                          1     
+    10              3                          1     
+    10              4                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        100        99         1    99.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/i1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                             rst_n           0           1       50.00 
+
+Total Node Count     =         50 
+Toggled Node Count   =         49 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      99.00% (99 of 100 bins)
+
+=================================================================================
+=== Instance: /tb/fft/s1/b1
+=== Design Unit: work.butterfly
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      13        13         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft/s1/b1 --
+NOTE: The modification timestamp for source file 'RTL/butterfly.v' has been altered since compilation.
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/butterfly.v
+    19              1                      20008     
+    20              1                      20008     
+    21              1                      20008     
+    24              1                      20008     
+    26              1                      20008     
+    29              1                      20008     
+    30              1                      20008     
+    31              1                      20008     
+    32              1                      20008     
+    34              1                      20008     
+    35              1                      20008     
+    37              1                      20008     
+    39              1                      20008     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        580       548        32    94.48%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft/s1/b1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                           ac[1-0]           0           0        0.00 
+                                           ad[1-0]           0           0        0.00 
+                                           bc[1-0]           0           0        0.00 
+                                           bd[1-0]           0           0        0.00 
+                                          w_i[0-1]           0           0        0.00 
+                                            w_i[4]           0           0        0.00 
+                                          w_i[6-7]           0           0        0.00 
+                                            w_i[9]           0           0        0.00 
+                                          w_r[0-1]           0           0        0.00 
+
+Total Node Count     =        290 
+Toggled Node Count   =        274 
+Untoggled Node Count =         16 
+
+Toggle Coverage      =      94.48% (548 of 580 bins)
+
+=================================================================================
+=== Instance: /tb/fft/s1
+=== Design Unit: work.fft_8
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb/fft/s1
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/fft_8.v
+------------------------------------IF Branch------------------------------------
+    34                                      8010     Count coming in to IF
+    34              1                          1     
+    43              1                       8009     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    44                                      8009     Count coming in to IF
+    44              1                       4005     
+    56              1                       4004     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                      8011     Count coming in to IF
+    75              1                       4004     
+                                            4007     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb/fft/s1 --
+
+  File RTL/fft_8.v
+----------------Focused Condition View-------------------
+Line       44 Item    1  (counter < 4)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       75 Item    1  (counter >= 4)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      33        33         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft/s1 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/fft_8.v
+    33              1                       8010     
+    35              1                          1     
+    35              2                          4     
+    36              1                          4     
+    37              1                          4     
+    39              1                          1     
+    40              1                          1     
+    41              1                          1     
+    45              1                       4005     
+    46              1                       4005     
+    47              1                       4005     
+    48              1                       4005     
+    49              1                       4005     
+    50              1                       4005     
+    51              1                       4005     
+    52              1                       4005     
+    53              1                       4005     
+    54              1                       4005     
+    57              1                       4004     
+    58              1                       4004     
+    59              1                       4004     
+    60              1                       4004     
+    61              1                       4004     
+    62              1                       4004     
+    63              1                       4004     
+    64              1                       4004     
+    65              1                       4004     
+    66              1                       4004     
+    67              1                       4004     
+    69              1                       8009     
+    74              1                       8011     
+    76              1                       4004     
+    77              1                       4004     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        316       233        83    73.73%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft/s1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                        cnt_out_en           0           0        0.00 
+                                           i[31-0]           0           0        0.00 
+                                             rst_n           0           1       50.00 
+                                            w_i[9]           0           0        0.00 
+                                          w_i[7-6]           0           0        0.00 
+                                            w_i[4]           0           0        0.00 
+                                          w_i[1-0]           0           0        0.00 
+                                          w_r[1-0]           0           0        0.00 
+
+Total Node Count     =        158 
+Toggled Node Count   =        116 
+Untoggled Node Count =         42 
+
+Toggle Coverage      =      73.73% (233 of 316 bins)
+
+=================================================================================
+=== Instance: /tb/fft/s2/b1
+=== Design Unit: work.butterfly
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      13        13         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft/s2/b1 --
+NOTE: The modification timestamp for source file 'RTL/butterfly.v' has been altered since compilation.
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/butterfly.v
+    19              1                      12007     
+    20              1                      12007     
+    21              1                      12007     
+    24              1                      12007     
+    26              1                      12007     
+    29              1                      12007     
+    30              1                      12007     
+    31              1                      12007     
+    32              1                      12007     
+    34              1                      12007     
+    35              1                      12007     
+    37              1                      12007     
+    39              1                      12007     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        580       458       122    78.96%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft/s2/b1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                           ac[9-0]           0           0        0.00 
+                                           ad[9-0]           0           0        0.00 
+                                           bc[9-0]           0           0        0.00 
+                                           bd[9-0]           0           0        0.00 
+                                          w_i[0-9]           0           0        0.00 
+                                          w_r[0-9]           0           0        0.00 
+                                           w_r[11]           0           0        0.00 
+
+Total Node Count     =        290 
+Toggled Node Count   =        229 
+Untoggled Node Count =         61 
+
+Toggle Coverage      =      78.96% (458 of 580 bins)
+
+=================================================================================
+=== Instance: /tb/fft/s2
+=== Design Unit: work.fft_4
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         8         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb/fft/s2
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/fft_4.v
+------------------------------------IF Branch------------------------------------
+    32                                      8006     Count coming in to IF
+    32              1                          1     
+    41              1                       8005     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    42                                      8005     Count coming in to IF
+    42              1                       4003     
+    50              1                       4002     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    59                                      8005     Count coming in to IF
+    59              1                       8004     
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                      8006     Count coming in to IF
+    65              1                       4002     
+                                            4004     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb/fft/s2 --
+
+  File RTL/fft_4.v
+----------------Focused Condition View-------------------
+Line       42 Item    1  (counter < 2)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       65 Item    1  (counter >= 2)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      25        25         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft/s2 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/fft_4.v
+    31              1                       8006     
+    33              1                          1     
+    33              2                          2     
+    34              1                          2     
+    35              1                          2     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+    43              1                       4003     
+    44              1                       4003     
+    45              1                       4003     
+    46              1                       4003     
+    47              1                       4003     
+    48              1                       4003     
+    51              1                       4002     
+    52              1                       4002     
+    53              1                       4002     
+    54              1                       4002     
+    55              1                       4002     
+    56              1                       4002     
+    57              1                       4002     
+    59              1                       8004     
+    64              1                       8006     
+    66              1                       4002     
+    67              1                       4002     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        316       205       111    64.87%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft/s2 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                         cnt_in_en           0           0        0.00 
+                                        cnt_out_en           0           0        0.00 
+                                           i[31-0]           0           0        0.00 
+                                             rst_n           0           1       50.00 
+                                          w_i[9-0]           0           0        0.00 
+                                           w_r[11]           0           0        0.00 
+                                          w_r[9-0]           0           0        0.00 
+
+Total Node Count     =        158 
+Toggled Node Count   =        102 
+Untoggled Node Count =         56 
+
+Toggle Coverage      =      64.87% (205 of 316 bins)
+
+=================================================================================
+=== Instance: /tb/fft/s3/b1
+=== Design Unit: work.butterfly
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      13        13         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft/s3/b1 --
+NOTE: The modification timestamp for source file 'RTL/butterfly.v' has been altered since compilation.
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/butterfly.v
+    19              1                       8004     
+    20              1                       8004     
+    21              1                       8004     
+    24              1                       8004     
+    26              1                       8004     
+    29              1                       8004     
+    30              1                       8004     
+    31              1                       8004     
+    32              1                       8004     
+    34              1                       8004     
+    35              1                       8004     
+    37              1                       8004     
+    39              1                       8004     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        580       396       184    68.27%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft/s3/b1 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                           ac[9-0]           0           0        0.00 
+                                          ad[23-0]           0           0        0.00 
+                                           bc[9-0]           0           0        0.00 
+                                          bd[23-0]           0           0        0.00 
+                                         w_i[0-11]           0           0        0.00 
+                                         w_r[0-11]           0           0        0.00 
+
+Total Node Count     =        290 
+Toggled Node Count   =        198 
+Untoggled Node Count =         92 
+
+Toggle Coverage      =      68.27% (396 of 580 bins)
+
+=================================================================================
+=== Instance: /tb/fft/s3
+=== Design Unit: work.fft_2
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         8         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb/fft/s3
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/fft_2.v
+------------------------------------IF Branch------------------------------------
+    30                                      8003     Count coming in to IF
+    30              1                          1     
+    37              1                       8002     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    38                                      8002     Count coming in to IF
+    38              1                       4002     
+    44              1                       4000     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    50                                      8002     Count coming in to IF
+    50              1                       8001     
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                      8003     Count coming in to IF
+    56              1                       4001     
+                                            4002     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tb/fft/s3 --
+
+  File RTL/fft_2.v
+----------------Focused Condition View-------------------
+Line       38 Item    1  (counter < 1'b1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       56 Item    1  (counter >= 1'b1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      18        18         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft/s3 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/fft_2.v
+    29              1                       8003     
+    31              1                          1     
+    32              1                          1     
+    33              1                          1     
+    34              1                          1     
+    35              1                          1     
+    39              1                       4002     
+    40              1                       4002     
+    41              1                       4002     
+    42              1                       4002     
+    45              1                       4000     
+    46              1                       4000     
+    47              1                       4000     
+    48              1                       4000     
+    50              1                       8001     
+    55              1                       8003     
+    57              1                       4001     
+    58              1                       4001     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        360       245       115    68.05%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft/s3 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                         cnt_in_en           0           0        0.00 
+                                           i[31-0]           0           0        0.00 
+                                             rst_n           0           1       50.00 
+                                         w_i[11-0]           0           0        0.00 
+                                         w_r[11-0]           0           0        0.00 
+
+Total Node Count     =        180 
+Toggled Node Count   =        122 
+Untoggled Node Count =         58 
+
+Toggle Coverage      =      68.05% (245 of 360 bins)
+
+=================================================================================
+=== Instance: /tb/fft
+=== Design Unit: work.FFT_top
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       2         2         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb/fft --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/FFT_top.v
+    6               1                       7994     
+    7               1                       7994     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        248       243         5    97.98%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb/fft --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                              cnt1           0           0        0.00 
+                                              cnt2           0           0        0.00 
+                                             rst_n           0           1       50.00 
+
+Total Node Count     =        124 
+Toggled Node Count   =        121 
+Untoggled Node Count =          3 
+
+Toggle Coverage      =      97.98% (243 of 248 bins)
+
+=================================================================================
+=== Instance: /tb
+=== Design Unit: work.tb
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       6         6         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tb.sv
+    11              1                      16020     
+    11              2                      16019     
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          2         2         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =          1 
+Toggled Node Count   =          1 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (2 of 2 bins)
+
+=================================================================================
+=== Instance: /pack
+=== Design Unit: work.pack
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         8         6         2    75.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /pack
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File monitor.sv
+------------------------------------IF Branch------------------------------------
+    22                                      8010     Count coming in to IF
+    22              1                       8010     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    22                                      8010     Count coming in to IF
+    22              1                         10     
+    26              1                       8000     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    30                                      8010     Count coming in to IF
+    30              1                    ***0***     
+    34              1                       8010     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    38                                      8010     Count coming in to IF
+    38              1                          1     
+                                            8009     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       4         2         2    50.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /pack --
+
+  File scoreboard.sv
+----------------Focused Condition View-------------------
+Line       22 Item    1  (this.total_tests < 10)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       30 Item    1  ((this.tr.X_r !== this.expected_X_r) || (this.tr.X_i !== this.expected_X_i))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+                           Input Term   Covered  Reason for no coverage   Hint
+                          -----------  --------  -----------------------  --------------
+  (this.tr.X_r !== this.expected_X_r)         N  '_1' not hit             Hit '_1'
+  (this.tr.X_i !== this.expected_X_i)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                             Non-masking condition(s)      
+ ---------  ---------  --------------------                   -------------------------     
+  Row   1:          1  (this.tr.X_r !== this.expected_X_r)_0  ~(this.tr.X_i !== this.expected_X_i)
+  Row   2:    ***0***  (this.tr.X_r !== this.expected_X_r)_1  -                             
+  Row   3:          1  (this.tr.X_i !== this.expected_X_i)_0  ~(this.tr.X_r !== this.expected_X_r)
+  Row   4:    ***0***  (this.tr.X_i !== this.expected_X_i)_1  ~(this.tr.X_r !== this.expected_X_r)
+
+----------------Focused Condition View-------------------
+Line       38 Item    1  (this.total_tests == 8009)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+
+
+
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    78.90%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins        256       202        54    78.90%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /pack/subscriber/cg1                             78.90%        100          -    Uncovered            
+    covered/total bins:                                   202        256          -                      
+    missing/total bins:                                    54        256          -                      
+    % Hit:                                             78.90%        100          -                      
+    Coverpoint #coverpoint__0#                         90.62%        100          -    Uncovered            
+        covered/total bins:                                58         64          -                      
+        missing/total bins:                                 6         64          -                      
+        % Hit:                                         90.62%        100          -                      
+        bin auto[0:63]                                    396          1          -    Covered              
+        bin auto[64:127]                                  395          1          -    Covered              
+        bin auto[128:191]                                 403          1          -    Covered              
+        bin auto[192:255]                                 372          1          -    Covered              
+        bin auto[256:319]                                 356          1          -    Covered              
+        bin auto[320:383]                                 329          1          -    Covered              
+        bin auto[384:447]                                 266          1          -    Covered              
+        bin auto[448:511]                                 274          1          -    Covered              
+        bin auto[512:575]                                 218          1          -    Covered              
+        bin auto[576:639]                                 183          1          -    Covered              
+        bin auto[640:703]                                 170          1          -    Covered              
+        bin auto[704:767]                                 150          1          -    Covered              
+        bin auto[768:831]                                 120          1          -    Covered              
+        bin auto[832:895]                                  87          1          -    Covered              
+        bin auto[896:959]                                  64          1          -    Covered              
+        bin auto[960:1023]                                 69          1          -    Covered              
+        bin auto[1024:1087]                                33          1          -    Covered              
+        bin auto[1088:1151]                                43          1          -    Covered              
+        bin auto[1152:1215]                                24          1          -    Covered              
+        bin auto[1216:1279]                                18          1          -    Covered              
+        bin auto[1280:1343]                                13          1          -    Covered              
+        bin auto[1344:1407]                                 9          1          -    Covered              
+        bin auto[1408:1471]                                10          1          -    Covered              
+        bin auto[1472:1535]                                 3          1          -    Covered              
+        bin auto[1536:1599]                                 1          1          -    Covered              
+        bin auto[1600:1663]                                 4          1          -    Covered              
+        bin auto[1664:1727]                                 1          1          -    Covered              
+        bin auto[1728:1791]                                 0          1          -    ZERO                 
+        bin auto[1792:1855]                                 2          1          -    Covered              
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 1          1          -    Covered              
+        bin auto[1984:2047]                                 1          1          -    Covered              
+        bin auto[2048:2111]                                 0          1          -    ZERO                 
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 0          1          -    ZERO                 
+        bin auto[2240:2303]                                 0          1          -    ZERO                 
+        bin auto[2304:2367]                                 1          1          -    Covered              
+        bin auto[2368:2431]                                 3          1          -    Covered              
+        bin auto[2432:2495]                                 3          1          -    Covered              
+        bin auto[2496:2559]                                 5          1          -    Covered              
+        bin auto[2560:2623]                                 6          1          -    Covered              
+        bin auto[2624:2687]                                 9          1          -    Covered              
+        bin auto[2688:2751]                                10          1          -    Covered              
+        bin auto[2752:2815]                                15          1          -    Covered              
+        bin auto[2816:2879]                                21          1          -    Covered              
+        bin auto[2880:2943]                                27          1          -    Covered              
+        bin auto[2944:3007]                                32          1          -    Covered              
+        bin auto[3008:3071]                                48          1          -    Covered              
+        bin auto[3072:3135]                                72          1          -    Covered              
+        bin auto[3136:3199]                                49          1          -    Covered              
+        bin auto[3200:3263]                                79          1          -    Covered              
+        bin auto[3264:3327]                               112          1          -    Covered              
+        bin auto[3328:3391]                               155          1          -    Covered              
+        bin auto[3392:3455]                               147          1          -    Covered              
+        bin auto[3456:3519]                               233          1          -    Covered              
+        bin auto[3520:3583]                               211          1          -    Covered              
+        bin auto[3584:3647]                               258          1          -    Covered              
+        bin auto[3648:3711]                               326          1          -    Covered              
+        bin auto[3712:3775]                               326          1          -    Covered              
+        bin auto[3776:3839]                               359          1          -    Covered              
+        bin auto[3840:3903]                               366          1          -    Covered              
+        bin auto[3904:3967]                               376          1          -    Covered              
+        bin auto[3968:4031]                               335          1          -    Covered              
+        bin auto[4032:4095]                               411          1          -    Covered              
+    Coverpoint #coverpoint__1#                         92.18%        100          -    Uncovered            
+        covered/total bins:                                59         64          -                      
+        missing/total bins:                                 5         64          -                      
+        % Hit:                                         92.18%        100          -                      
+        bin auto[0:63]                                    383          1          -    Covered              
+        bin auto[64:127]                                  417          1          -    Covered              
+        bin auto[128:191]                                 359          1          -    Covered              
+        bin auto[192:255]                                 349          1          -    Covered              
+        bin auto[256:319]                                 346          1          -    Covered              
+        bin auto[320:383]                                 287          1          -    Covered              
+        bin auto[384:447]                                 290          1          -    Covered              
+        bin auto[448:511]                                 232          1          -    Covered              
+        bin auto[512:575]                                 211          1          -    Covered              
+        bin auto[576:639]                                 187          1          -    Covered              
+        bin auto[640:703]                                 170          1          -    Covered              
+        bin auto[704:767]                                 152          1          -    Covered              
+        bin auto[768:831]                                 119          1          -    Covered              
+        bin auto[832:895]                                  84          1          -    Covered              
+        bin auto[896:959]                                  79          1          -    Covered              
+        bin auto[960:1023]                                 68          1          -    Covered              
+        bin auto[1024:1087]                                67          1          -    Covered              
+        bin auto[1088:1151]                                35          1          -    Covered              
+        bin auto[1152:1215]                                29          1          -    Covered              
+        bin auto[1216:1279]                                26          1          -    Covered              
+        bin auto[1280:1343]                                16          1          -    Covered              
+        bin auto[1344:1407]                                16          1          -    Covered              
+        bin auto[1408:1471]                                13          1          -    Covered              
+        bin auto[1472:1535]                                 3          1          -    Covered              
+        bin auto[1536:1599]                                 7          1          -    Covered              
+        bin auto[1600:1663]                                 0          1          -    ZERO                 
+        bin auto[1664:1727]                                 1          1          -    Covered              
+        bin auto[1728:1791]                                 2          1          -    Covered              
+        bin auto[1792:1855]                                 1          1          -    Covered              
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 0          1          -    ZERO                 
+        bin auto[1984:2047]                                 1          1          -    Covered              
+        bin auto[2048:2111]                                 1          1          -    Covered              
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 1          1          -    Covered              
+        bin auto[2240:2303]                                 1          1          -    Covered              
+        bin auto[2304:2367]                                 0          1          -    ZERO                 
+        bin auto[2368:2431]                                 1          1          -    Covered              
+        bin auto[2432:2495]                                 1          1          -    Covered              
+        bin auto[2496:2559]                                 4          1          -    Covered              
+        bin auto[2560:2623]                                 6          1          -    Covered              
+        bin auto[2624:2687]                                 5          1          -    Covered              
+        bin auto[2688:2751]                                12          1          -    Covered              
+        bin auto[2752:2815]                                 8          1          -    Covered              
+        bin auto[2816:2879]                                22          1          -    Covered              
+        bin auto[2880:2943]                                25          1          -    Covered              
+        bin auto[2944:3007]                                37          1          -    Covered              
+        bin auto[3008:3071]                                57          1          -    Covered              
+        bin auto[3072:3135]                                72          1          -    Covered              
+        bin auto[3136:3199]                                89          1          -    Covered              
+        bin auto[3200:3263]                               107          1          -    Covered              
+        bin auto[3264:3327]                               113          1          -    Covered              
+        bin auto[3328:3391]                               140          1          -    Covered              
+        bin auto[3392:3455]                               179          1          -    Covered              
+        bin auto[3456:3519]                               177          1          -    Covered              
+        bin auto[3520:3583]                               229          1          -    Covered              
+        bin auto[3584:3647]                               262          1          -    Covered              
+        bin auto[3648:3711]                               327          1          -    Covered              
+        bin auto[3712:3775]                               309          1          -    Covered              
+        bin auto[3776:3839]                               359          1          -    Covered              
+        bin auto[3840:3903]                               360          1          -    Covered              
+        bin auto[3904:3967]                               381          1          -    Covered              
+        bin auto[3968:4031]                               385          1          -    Covered              
+        bin auto[4032:4095]                               390          1          -    Covered              
+    Coverpoint #coverpoint__2#                         64.06%        100          -    Uncovered            
+        covered/total bins:                                41         64          -                      
+        missing/total bins:                                23         64          -                      
+        % Hit:                                         64.06%        100          -                      
+        bin auto[0:63]                                    586          1          -    Covered              
+        bin auto[64:127]                                  532          1          -    Covered              
+        bin auto[128:191]                                 493          1          -    Covered              
+        bin auto[192:255]                                 453          1          -    Covered              
+        bin auto[256:319]                                 429          1          -    Covered              
+        bin auto[320:383]                                 332          1          -    Covered              
+        bin auto[384:447]                                 293          1          -    Covered              
+        bin auto[448:511]                                 222          1          -    Covered              
+        bin auto[512:575]                                 175          1          -    Covered              
+        bin auto[576:639]                                 125          1          -    Covered              
+        bin auto[640:703]                                 102          1          -    Covered              
+        bin auto[704:767]                                  65          1          -    Covered              
+        bin auto[768:831]                                  38          1          -    Covered              
+        bin auto[832:895]                                  41          1          -    Covered              
+        bin auto[896:959]                                  24          1          -    Covered              
+        bin auto[960:1023]                                 14          1          -    Covered              
+        bin auto[1024:1087]                                 5          1          -    Covered              
+        bin auto[1088:1151]                                 7          1          -    Covered              
+        bin auto[1152:1215]                                 2          1          -    Covered              
+        bin auto[1216:1279]                                 0          1          -    ZERO                 
+        bin auto[1280:1343]                                 2          1          -    Covered              
+        bin auto[1344:1407]                                 0          1          -    ZERO                 
+        bin auto[1408:1471]                                 0          1          -    ZERO                 
+        bin auto[1472:1535]                                 0          1          -    ZERO                 
+        bin auto[1536:1599]                                 0          1          -    ZERO                 
+        bin auto[1600:1663]                                 0          1          -    ZERO                 
+        bin auto[1664:1727]                                 0          1          -    ZERO                 
+        bin auto[1728:1791]                                 0          1          -    ZERO                 
+        bin auto[1792:1855]                                 0          1          -    ZERO                 
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 0          1          -    ZERO                 
+        bin auto[1984:2047]                                 0          1          -    ZERO                 
+        bin auto[2048:2111]                                 0          1          -    ZERO                 
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 0          1          -    ZERO                 
+        bin auto[2240:2303]                                 0          1          -    ZERO                 
+        bin auto[2304:2367]                                 0          1          -    ZERO                 
+        bin auto[2368:2431]                                 0          1          -    ZERO                 
+        bin auto[2432:2495]                                 0          1          -    ZERO                 
+        bin auto[2496:2559]                                 0          1          -    ZERO                 
+        bin auto[2560:2623]                                 0          1          -    ZERO                 
+        bin auto[2624:2687]                                 0          1          -    ZERO                 
+        bin auto[2688:2751]                                 0          1          -    ZERO                 
+        bin auto[2752:2815]                                 1          1          -    Covered              
+        bin auto[2816:2879]                                 4          1          -    Covered              
+        bin auto[2880:2943]                                 1          1          -    Covered              
+        bin auto[2944:3007]                                 9          1          -    Covered              
+        bin auto[3008:3071]                                 7          1          -    Covered              
+        bin auto[3072:3135]                                19          1          -    Covered              
+        bin auto[3136:3199]                                26          1          -    Covered              
+        bin auto[3200:3263]                                45          1          -    Covered              
+        bin auto[3264:3327]                                49          1          -    Covered              
+        bin auto[3328:3391]                                79          1          -    Covered              
+        bin auto[3392:3455]                                96          1          -    Covered              
+        bin auto[3456:3519]                               131          1          -    Covered              
+        bin auto[3520:3583]                               189          1          -    Covered              
+        bin auto[3584:3647]                               242          1          -    Covered              
+        bin auto[3648:3711]                               294          1          -    Covered              
+        bin auto[3712:3775]                               363          1          -    Covered              
+        bin auto[3776:3839]                               388          1          -    Covered              
+        bin auto[3840:3903]                               471          1          -    Covered              
+        bin auto[3904:3967]                               497          1          -    Covered              
+        bin auto[3968:4031]                               593          1          -    Covered              
+        bin auto[4032:4095]                               566          1          -    Covered              
+    Coverpoint #coverpoint__3#                         68.75%        100          -    Uncovered            
+        covered/total bins:                                44         64          -                      
+        missing/total bins:                                20         64          -                      
+        % Hit:                                         68.75%        100          -                      
+        bin auto[0:63]                                    536          1          -    Covered              
+        bin auto[64:127]                                  582          1          -    Covered              
+        bin auto[128:191]                                 504          1          -    Covered              
+        bin auto[192:255]                                 432          1          -    Covered              
+        bin auto[256:319]                                 413          1          -    Covered              
+        bin auto[320:383]                                 363          1          -    Covered              
+        bin auto[384:447]                                 303          1          -    Covered              
+        bin auto[448:511]                                 208          1          -    Covered              
+        bin auto[512:575]                                 199          1          -    Covered              
+        bin auto[576:639]                                 130          1          -    Covered              
+        bin auto[640:703]                                  92          1          -    Covered              
+        bin auto[704:767]                                  66          1          -    Covered              
+        bin auto[768:831]                                  57          1          -    Covered              
+        bin auto[832:895]                                  34          1          -    Covered              
+        bin auto[896:959]                                  17          1          -    Covered              
+        bin auto[960:1023]                                  9          1          -    Covered              
+        bin auto[1024:1087]                                10          1          -    Covered              
+        bin auto[1088:1151]                                 6          1          -    Covered              
+        bin auto[1152:1215]                                 2          1          -    Covered              
+        bin auto[1216:1279]                                 0          1          -    ZERO                 
+        bin auto[1280:1343]                                 1          1          -    Covered              
+        bin auto[1344:1407]                                 0          1          -    ZERO                 
+        bin auto[1408:1471]                                 1          1          -    Covered              
+        bin auto[1472:1535]                                 0          1          -    ZERO                 
+        bin auto[1536:1599]                                 0          1          -    ZERO                 
+        bin auto[1600:1663]                                 0          1          -    ZERO                 
+        bin auto[1664:1727]                                 0          1          -    ZERO                 
+        bin auto[1728:1791]                                 0          1          -    ZERO                 
+        bin auto[1792:1855]                                 0          1          -    ZERO                 
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 0          1          -    ZERO                 
+        bin auto[1984:2047]                                 0          1          -    ZERO                 
+        bin auto[2048:2111]                                 0          1          -    ZERO                 
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 0          1          -    ZERO                 
+        bin auto[2240:2303]                                 0          1          -    ZERO                 
+        bin auto[2304:2367]                                 0          1          -    ZERO                 
+        bin auto[2368:2431]                                 0          1          -    ZERO                 
+        bin auto[2432:2495]                                 0          1          -    ZERO                 
+        bin auto[2496:2559]                                 0          1          -    ZERO                 
+        bin auto[2560:2623]                                 0          1          -    ZERO                 
+        bin auto[2624:2687]                                 1          1          -    Covered              
+        bin auto[2688:2751]                                 1          1          -    Covered              
+        bin auto[2752:2815]                                 2          1          -    Covered              
+        bin auto[2816:2879]                                 1          1          -    Covered              
+        bin auto[2880:2943]                                 3          1          -    Covered              
+        bin auto[2944:3007]                                 3          1          -    Covered              
+        bin auto[3008:3071]                                 7          1          -    Covered              
+        bin auto[3072:3135]                                11          1          -    Covered              
+        bin auto[3136:3199]                                20          1          -    Covered              
+        bin auto[3200:3263]                                38          1          -    Covered              
+        bin auto[3264:3327]                                54          1          -    Covered              
+        bin auto[3328:3391]                                64          1          -    Covered              
+        bin auto[3392:3455]                               114          1          -    Covered              
+        bin auto[3456:3519]                               135          1          -    Covered              
+        bin auto[3520:3583]                               184          1          -    Covered              
+        bin auto[3584:3647]                               262          1          -    Covered              
+        bin auto[3648:3711]                               272          1          -    Covered              
+        bin auto[3712:3775]                               360          1          -    Covered              
+        bin auto[3776:3839]                               402          1          -    Covered              
+        bin auto[3840:3903]                               461          1          -    Covered              
+        bin auto[3904:3967]                               527          1          -    Covered              
+        bin auto[3968:4031]                               557          1          -    Covered              
+        bin auto[4032:4095]                               566          1          -    Covered              
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      80        78         2    97.50%
+
+================================Statement Details================================
+
+Statement Coverage for instance /pack --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File driver.sv
+    11              1                          1     
+    12              1                          1     
+    13              1                       8002     
+    14              1                       8001     
+    16              1                       8001     
+    17              1                       8001     
+    18              1                       8001     
+    23              1                          1     
+  File monitor.sv
+    14              1                          1     
+    15              1                       8011     
+    16              1                       8011     
+    17              1                       8010     
+    18              1                       8010     
+    19              1                       8010     
+    20              1                       8010     
+    21              1                       8010     
+    23              1                       8010     
+    24              1                       8010     
+    31              1                          1     
+    34              1                          1     
+  File scoreboard.sv
+    7               1                          1     
+    8               1                          1     
+    9               1                          1     
+    10              1                          1     
+    19              1                          1     
+    20              1                          1     
+    21              1                       8011     
+    23              1                         10     
+    24              1                         10     
+    27              1                       8000     
+    31              1                    ***0***     
+    32              1                    ***0***     
+    35              1                       8010     
+    36              1                       8010     
+    38              1                          1     
+    39              1                       8010     
+    44              1                          1     
+  File sequencer.sv
+    12              1                          1     
+    13              1                          1     
+    15              1                          1     
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    20              1                       8000     
+    21              1                       8000     
+    22              1                       8000     
+    23              1                       8000     
+    24              1                       8000     
+    27              1                          1     
+    31              1                          1     
+  File subscriber.sv
+    15              1                          1     
+    19              1                          1     
+    20              1                       8011     
+    21              1                       8011     
+    22              1                       8010     
+    27              1                          1     
+  File env.sv
+    8               1                          1     
+    9               1                          1     
+    10              1                          1     
+    14              1                          1     
+    15              1                          1     
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+    27              1                          1     
+    28              1                          1     
+    30              1                          1     
+    31              1                          1     
+    32              1                          1     
+    33              1                          1     
+    34              1                          1     
+    36              1                          1     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /pack/subscriber/cg1                             78.90%        100          -    Uncovered            
+    covered/total bins:                                   202        256          -                      
+    missing/total bins:                                    54        256          -                      
+    % Hit:                                             78.90%        100          -                      
+    Coverpoint #coverpoint__0#                         90.62%        100          -    Uncovered            
+        covered/total bins:                                58         64          -                      
+        missing/total bins:                                 6         64          -                      
+        % Hit:                                         90.62%        100          -                      
+        bin auto[0:63]                                    396          1          -    Covered              
+        bin auto[64:127]                                  395          1          -    Covered              
+        bin auto[128:191]                                 403          1          -    Covered              
+        bin auto[192:255]                                 372          1          -    Covered              
+        bin auto[256:319]                                 356          1          -    Covered              
+        bin auto[320:383]                                 329          1          -    Covered              
+        bin auto[384:447]                                 266          1          -    Covered              
+        bin auto[448:511]                                 274          1          -    Covered              
+        bin auto[512:575]                                 218          1          -    Covered              
+        bin auto[576:639]                                 183          1          -    Covered              
+        bin auto[640:703]                                 170          1          -    Covered              
+        bin auto[704:767]                                 150          1          -    Covered              
+        bin auto[768:831]                                 120          1          -    Covered              
+        bin auto[832:895]                                  87          1          -    Covered              
+        bin auto[896:959]                                  64          1          -    Covered              
+        bin auto[960:1023]                                 69          1          -    Covered              
+        bin auto[1024:1087]                                33          1          -    Covered              
+        bin auto[1088:1151]                                43          1          -    Covered              
+        bin auto[1152:1215]                                24          1          -    Covered              
+        bin auto[1216:1279]                                18          1          -    Covered              
+        bin auto[1280:1343]                                13          1          -    Covered              
+        bin auto[1344:1407]                                 9          1          -    Covered              
+        bin auto[1408:1471]                                10          1          -    Covered              
+        bin auto[1472:1535]                                 3          1          -    Covered              
+        bin auto[1536:1599]                                 1          1          -    Covered              
+        bin auto[1600:1663]                                 4          1          -    Covered              
+        bin auto[1664:1727]                                 1          1          -    Covered              
+        bin auto[1728:1791]                                 0          1          -    ZERO                 
+        bin auto[1792:1855]                                 2          1          -    Covered              
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 1          1          -    Covered              
+        bin auto[1984:2047]                                 1          1          -    Covered              
+        bin auto[2048:2111]                                 0          1          -    ZERO                 
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 0          1          -    ZERO                 
+        bin auto[2240:2303]                                 0          1          -    ZERO                 
+        bin auto[2304:2367]                                 1          1          -    Covered              
+        bin auto[2368:2431]                                 3          1          -    Covered              
+        bin auto[2432:2495]                                 3          1          -    Covered              
+        bin auto[2496:2559]                                 5          1          -    Covered              
+        bin auto[2560:2623]                                 6          1          -    Covered              
+        bin auto[2624:2687]                                 9          1          -    Covered              
+        bin auto[2688:2751]                                10          1          -    Covered              
+        bin auto[2752:2815]                                15          1          -    Covered              
+        bin auto[2816:2879]                                21          1          -    Covered              
+        bin auto[2880:2943]                                27          1          -    Covered              
+        bin auto[2944:3007]                                32          1          -    Covered              
+        bin auto[3008:3071]                                48          1          -    Covered              
+        bin auto[3072:3135]                                72          1          -    Covered              
+        bin auto[3136:3199]                                49          1          -    Covered              
+        bin auto[3200:3263]                                79          1          -    Covered              
+        bin auto[3264:3327]                               112          1          -    Covered              
+        bin auto[3328:3391]                               155          1          -    Covered              
+        bin auto[3392:3455]                               147          1          -    Covered              
+        bin auto[3456:3519]                               233          1          -    Covered              
+        bin auto[3520:3583]                               211          1          -    Covered              
+        bin auto[3584:3647]                               258          1          -    Covered              
+        bin auto[3648:3711]                               326          1          -    Covered              
+        bin auto[3712:3775]                               326          1          -    Covered              
+        bin auto[3776:3839]                               359          1          -    Covered              
+        bin auto[3840:3903]                               366          1          -    Covered              
+        bin auto[3904:3967]                               376          1          -    Covered              
+        bin auto[3968:4031]                               335          1          -    Covered              
+        bin auto[4032:4095]                               411          1          -    Covered              
+    Coverpoint #coverpoint__1#                         92.18%        100          -    Uncovered            
+        covered/total bins:                                59         64          -                      
+        missing/total bins:                                 5         64          -                      
+        % Hit:                                         92.18%        100          -                      
+        bin auto[0:63]                                    383          1          -    Covered              
+        bin auto[64:127]                                  417          1          -    Covered              
+        bin auto[128:191]                                 359          1          -    Covered              
+        bin auto[192:255]                                 349          1          -    Covered              
+        bin auto[256:319]                                 346          1          -    Covered              
+        bin auto[320:383]                                 287          1          -    Covered              
+        bin auto[384:447]                                 290          1          -    Covered              
+        bin auto[448:511]                                 232          1          -    Covered              
+        bin auto[512:575]                                 211          1          -    Covered              
+        bin auto[576:639]                                 187          1          -    Covered              
+        bin auto[640:703]                                 170          1          -    Covered              
+        bin auto[704:767]                                 152          1          -    Covered              
+        bin auto[768:831]                                 119          1          -    Covered              
+        bin auto[832:895]                                  84          1          -    Covered              
+        bin auto[896:959]                                  79          1          -    Covered              
+        bin auto[960:1023]                                 68          1          -    Covered              
+        bin auto[1024:1087]                                67          1          -    Covered              
+        bin auto[1088:1151]                                35          1          -    Covered              
+        bin auto[1152:1215]                                29          1          -    Covered              
+        bin auto[1216:1279]                                26          1          -    Covered              
+        bin auto[1280:1343]                                16          1          -    Covered              
+        bin auto[1344:1407]                                16          1          -    Covered              
+        bin auto[1408:1471]                                13          1          -    Covered              
+        bin auto[1472:1535]                                 3          1          -    Covered              
+        bin auto[1536:1599]                                 7          1          -    Covered              
+        bin auto[1600:1663]                                 0          1          -    ZERO                 
+        bin auto[1664:1727]                                 1          1          -    Covered              
+        bin auto[1728:1791]                                 2          1          -    Covered              
+        bin auto[1792:1855]                                 1          1          -    Covered              
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 0          1          -    ZERO                 
+        bin auto[1984:2047]                                 1          1          -    Covered              
+        bin auto[2048:2111]                                 1          1          -    Covered              
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 1          1          -    Covered              
+        bin auto[2240:2303]                                 1          1          -    Covered              
+        bin auto[2304:2367]                                 0          1          -    ZERO                 
+        bin auto[2368:2431]                                 1          1          -    Covered              
+        bin auto[2432:2495]                                 1          1          -    Covered              
+        bin auto[2496:2559]                                 4          1          -    Covered              
+        bin auto[2560:2623]                                 6          1          -    Covered              
+        bin auto[2624:2687]                                 5          1          -    Covered              
+        bin auto[2688:2751]                                12          1          -    Covered              
+        bin auto[2752:2815]                                 8          1          -    Covered              
+        bin auto[2816:2879]                                22          1          -    Covered              
+        bin auto[2880:2943]                                25          1          -    Covered              
+        bin auto[2944:3007]                                37          1          -    Covered              
+        bin auto[3008:3071]                                57          1          -    Covered              
+        bin auto[3072:3135]                                72          1          -    Covered              
+        bin auto[3136:3199]                                89          1          -    Covered              
+        bin auto[3200:3263]                               107          1          -    Covered              
+        bin auto[3264:3327]                               113          1          -    Covered              
+        bin auto[3328:3391]                               140          1          -    Covered              
+        bin auto[3392:3455]                               179          1          -    Covered              
+        bin auto[3456:3519]                               177          1          -    Covered              
+        bin auto[3520:3583]                               229          1          -    Covered              
+        bin auto[3584:3647]                               262          1          -    Covered              
+        bin auto[3648:3711]                               327          1          -    Covered              
+        bin auto[3712:3775]                               309          1          -    Covered              
+        bin auto[3776:3839]                               359          1          -    Covered              
+        bin auto[3840:3903]                               360          1          -    Covered              
+        bin auto[3904:3967]                               381          1          -    Covered              
+        bin auto[3968:4031]                               385          1          -    Covered              
+        bin auto[4032:4095]                               390          1          -    Covered              
+    Coverpoint #coverpoint__2#                         64.06%        100          -    Uncovered            
+        covered/total bins:                                41         64          -                      
+        missing/total bins:                                23         64          -                      
+        % Hit:                                         64.06%        100          -                      
+        bin auto[0:63]                                    586          1          -    Covered              
+        bin auto[64:127]                                  532          1          -    Covered              
+        bin auto[128:191]                                 493          1          -    Covered              
+        bin auto[192:255]                                 453          1          -    Covered              
+        bin auto[256:319]                                 429          1          -    Covered              
+        bin auto[320:383]                                 332          1          -    Covered              
+        bin auto[384:447]                                 293          1          -    Covered              
+        bin auto[448:511]                                 222          1          -    Covered              
+        bin auto[512:575]                                 175          1          -    Covered              
+        bin auto[576:639]                                 125          1          -    Covered              
+        bin auto[640:703]                                 102          1          -    Covered              
+        bin auto[704:767]                                  65          1          -    Covered              
+        bin auto[768:831]                                  38          1          -    Covered              
+        bin auto[832:895]                                  41          1          -    Covered              
+        bin auto[896:959]                                  24          1          -    Covered              
+        bin auto[960:1023]                                 14          1          -    Covered              
+        bin auto[1024:1087]                                 5          1          -    Covered              
+        bin auto[1088:1151]                                 7          1          -    Covered              
+        bin auto[1152:1215]                                 2          1          -    Covered              
+        bin auto[1216:1279]                                 0          1          -    ZERO                 
+        bin auto[1280:1343]                                 2          1          -    Covered              
+        bin auto[1344:1407]                                 0          1          -    ZERO                 
+        bin auto[1408:1471]                                 0          1          -    ZERO                 
+        bin auto[1472:1535]                                 0          1          -    ZERO                 
+        bin auto[1536:1599]                                 0          1          -    ZERO                 
+        bin auto[1600:1663]                                 0          1          -    ZERO                 
+        bin auto[1664:1727]                                 0          1          -    ZERO                 
+        bin auto[1728:1791]                                 0          1          -    ZERO                 
+        bin auto[1792:1855]                                 0          1          -    ZERO                 
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 0          1          -    ZERO                 
+        bin auto[1984:2047]                                 0          1          -    ZERO                 
+        bin auto[2048:2111]                                 0          1          -    ZERO                 
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 0          1          -    ZERO                 
+        bin auto[2240:2303]                                 0          1          -    ZERO                 
+        bin auto[2304:2367]                                 0          1          -    ZERO                 
+        bin auto[2368:2431]                                 0          1          -    ZERO                 
+        bin auto[2432:2495]                                 0          1          -    ZERO                 
+        bin auto[2496:2559]                                 0          1          -    ZERO                 
+        bin auto[2560:2623]                                 0          1          -    ZERO                 
+        bin auto[2624:2687]                                 0          1          -    ZERO                 
+        bin auto[2688:2751]                                 0          1          -    ZERO                 
+        bin auto[2752:2815]                                 1          1          -    Covered              
+        bin auto[2816:2879]                                 4          1          -    Covered              
+        bin auto[2880:2943]                                 1          1          -    Covered              
+        bin auto[2944:3007]                                 9          1          -    Covered              
+        bin auto[3008:3071]                                 7          1          -    Covered              
+        bin auto[3072:3135]                                19          1          -    Covered              
+        bin auto[3136:3199]                                26          1          -    Covered              
+        bin auto[3200:3263]                                45          1          -    Covered              
+        bin auto[3264:3327]                                49          1          -    Covered              
+        bin auto[3328:3391]                                79          1          -    Covered              
+        bin auto[3392:3455]                                96          1          -    Covered              
+        bin auto[3456:3519]                               131          1          -    Covered              
+        bin auto[3520:3583]                               189          1          -    Covered              
+        bin auto[3584:3647]                               242          1          -    Covered              
+        bin auto[3648:3711]                               294          1          -    Covered              
+        bin auto[3712:3775]                               363          1          -    Covered              
+        bin auto[3776:3839]                               388          1          -    Covered              
+        bin auto[3840:3903]                               471          1          -    Covered              
+        bin auto[3904:3967]                               497          1          -    Covered              
+        bin auto[3968:4031]                               593          1          -    Covered              
+        bin auto[4032:4095]                               566          1          -    Covered              
+    Coverpoint #coverpoint__3#                         68.75%        100          -    Uncovered            
+        covered/total bins:                                44         64          -                      
+        missing/total bins:                                20         64          -                      
+        % Hit:                                         68.75%        100          -                      
+        bin auto[0:63]                                    536          1          -    Covered              
+        bin auto[64:127]                                  582          1          -    Covered              
+        bin auto[128:191]                                 504          1          -    Covered              
+        bin auto[192:255]                                 432          1          -    Covered              
+        bin auto[256:319]                                 413          1          -    Covered              
+        bin auto[320:383]                                 363          1          -    Covered              
+        bin auto[384:447]                                 303          1          -    Covered              
+        bin auto[448:511]                                 208          1          -    Covered              
+        bin auto[512:575]                                 199          1          -    Covered              
+        bin auto[576:639]                                 130          1          -    Covered              
+        bin auto[640:703]                                  92          1          -    Covered              
+        bin auto[704:767]                                  66          1          -    Covered              
+        bin auto[768:831]                                  57          1          -    Covered              
+        bin auto[832:895]                                  34          1          -    Covered              
+        bin auto[896:959]                                  17          1          -    Covered              
+        bin auto[960:1023]                                  9          1          -    Covered              
+        bin auto[1024:1087]                                10          1          -    Covered              
+        bin auto[1088:1151]                                 6          1          -    Covered              
+        bin auto[1152:1215]                                 2          1          -    Covered              
+        bin auto[1216:1279]                                 0          1          -    ZERO                 
+        bin auto[1280:1343]                                 1          1          -    Covered              
+        bin auto[1344:1407]                                 0          1          -    ZERO                 
+        bin auto[1408:1471]                                 1          1          -    Covered              
+        bin auto[1472:1535]                                 0          1          -    ZERO                 
+        bin auto[1536:1599]                                 0          1          -    ZERO                 
+        bin auto[1600:1663]                                 0          1          -    ZERO                 
+        bin auto[1664:1727]                                 0          1          -    ZERO                 
+        bin auto[1728:1791]                                 0          1          -    ZERO                 
+        bin auto[1792:1855]                                 0          1          -    ZERO                 
+        bin auto[1856:1919]                                 0          1          -    ZERO                 
+        bin auto[1920:1983]                                 0          1          -    ZERO                 
+        bin auto[1984:2047]                                 0          1          -    ZERO                 
+        bin auto[2048:2111]                                 0          1          -    ZERO                 
+        bin auto[2112:2175]                                 0          1          -    ZERO                 
+        bin auto[2176:2239]                                 0          1          -    ZERO                 
+        bin auto[2240:2303]                                 0          1          -    ZERO                 
+        bin auto[2304:2367]                                 0          1          -    ZERO                 
+        bin auto[2368:2431]                                 0          1          -    ZERO                 
+        bin auto[2432:2495]                                 0          1          -    ZERO                 
+        bin auto[2496:2559]                                 0          1          -    ZERO                 
+        bin auto[2560:2623]                                 0          1          -    ZERO                 
+        bin auto[2624:2687]                                 1          1          -    Covered              
+        bin auto[2688:2751]                                 1          1          -    Covered              
+        bin auto[2752:2815]                                 2          1          -    Covered              
+        bin auto[2816:2879]                                 1          1          -    Covered              
+        bin auto[2880:2943]                                 3          1          -    Covered              
+        bin auto[2944:3007]                                 3          1          -    Covered              
+        bin auto[3008:3071]                                 7          1          -    Covered              
+        bin auto[3072:3135]                                11          1          -    Covered              
+        bin auto[3136:3199]                                20          1          -    Covered              
+        bin auto[3200:3263]                                38          1          -    Covered              
+        bin auto[3264:3327]                                54          1          -    Covered              
+        bin auto[3328:3391]                                64          1          -    Covered              
+        bin auto[3392:3455]                               114          1          -    Covered              
+        bin auto[3456:3519]                               135          1          -    Covered              
+        bin auto[3520:3583]                               184          1          -    Covered              
+        bin auto[3584:3647]                               262          1          -    Covered              
+        bin auto[3648:3711]                               272          1          -    Covered              
+        bin auto[3712:3775]                               360          1          -    Covered              
+        bin auto[3776:3839]                               402          1          -    Covered              
+        bin auto[3840:3903]                               461          1          -    Covered              
+        bin auto[3904:3967]                               527          1          -    Covered              
+        bin auto[3968:4031]                               557          1          -    Covered              
+        bin auto[4032:4095]                               566          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 78.90%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 85.60%
+

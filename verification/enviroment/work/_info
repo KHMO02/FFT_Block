@@ -1,0 +1,273 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/ADI/project/FFT_Block/RTL
+T_opt
+Z2 !s11d pack C:/ADI/project/FFT_Block/verification/work 1 FFT_if 1 C:/ADI/project/FFT_Block/verification/work 
+!s110 1755709404
+VfoMLS=>iKP9DZOMJCR^kS0
+Z3 04 2 4 work tb fast 0
+=1-9c2dcdc3a64c-68a5ffdb-376-50e4
+Z4 !s124 OEM100
+Z5 o-quiet -auto_acc_if_foreign -work work +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2021.1;73
+R1
+T_opt1
+R2
+!s110 1755801556
+VaVA5DBbU@bf@6D6YL=;UO1
+R3
+=1-9c2dcdc3a64c-68a767d3-2fa-1ff8
+R4
+R5
+R6
+n@_opt1
+R7
+vbutterfly
+Z8 !s110 1755801539
+!i10b 1
+!s100 TE8m]o:ib]5jb_Z^bjeV_3
+IA`FYjV;V<UcTamG=bHWmS1
+Z9 dC:/ADI/project/FFT_Block/verification
+w1755801535
+Z10 8RTL/butterfly.v
+Z11 FRTL/butterfly.v
+!i122 29
+L0 1 43
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z14 !s108 1755801539.000000
+Z15 !s107 env.sv|subscriber.sv|sequencer.sv|scoreboard.sv|monitor.sv|driver.sv|transaction.sv|RTL/fft_8.v|RTL/fft_4.v|RTL/fft_2.v|RTL/butterfly.v|RTL/FFT_top.v|tb.sv|pack.sv|FFT_if.sv|
+Z16 !s90 -reportprogress|300|-cover|bcstf|FFT_if.sv|pack.sv|tb.sv|RTL/FFT_top.v|RTL/butterfly.v|RTL/fft_2.v|RTL/fft_4.v|RTL/fft_8.v|
+!i113 0
+Z17 !s102 -cover bcstf
+Z18 o-cover bcstf -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vfft_2
+R8
+!i10b 1
+!s100 i_jR1i;]7NDU_NeMMFPdm3
+IS6mmOKbPKO15R8@GF@^J43
+R9
+w1755600163
+8RTL/fft_2.v
+FRTL/fft_2.v
+!i122 29
+L0 1 64
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+vfft_4
+R8
+!i10b 1
+!s100 gcQe=o^Cee1=WmeFNb4H42
+IQbfZj1BDNYj1FKg[HPJ1n0
+R9
+w1755575168
+8RTL/fft_4.v
+FRTL/fft_4.v
+!i122 29
+L0 1 73
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+vfft_8
+R8
+!i10b 1
+!s100 `V686H^bT1PS>J7N:oS:`3
+I[W`I8Sm2DD1?>5KO?RG]h2
+R9
+w1755563471
+8RTL/fft_8.v
+FRTL/fft_8.v
+!i122 29
+L0 1 83
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+YFFT_if
+Z19 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R8
+!i10b 1
+!s100 B0BHTWlDBUW1nbT7Q<2jT1
+IzHah;RgZ^zd?E7DN9Ef2=1
+S1
+R9
+w1755706199
+8FFT_if.sv
+FFFT_if.sv
+!i122 29
+Z20 L0 1 0
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+n@f@f@t_if
+vFFT_top
+R8
+!i10b 1
+!s100 8_jOWc6A4:i1UAOOD>^l:2
+I>nU8P0n6;N=9@1K9FREJ?1
+R9
+w1755707346
+8RTL/FFT_top.v
+FRTL/FFT_top.v
+!i122 29
+L0 1 14
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+n@f@f@t_top
+Xpack
+!s115 FFT_if
+R19
+R8
+!i10b 1
+!s100 Y<moj=E=@jaKkJIZAPWW<1
+Ij6@:5j=i@jf<oac`>EXi71
+S1
+R9
+w1755709379
+8pack.sv
+Fpack.sv
+Ftransaction.sv
+Fdriver.sv
+Fmonitor.sv
+Fscoreboard.sv
+Fsequencer.sv
+Fsubscriber.sv
+Fenv.sv
+!i122 29
+R20
+Vj6@:5j=i@jf<oac`>EXi71
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+vtb
+R19
+DXx4 work 4 pack 0 22 j6@:5j=i@jf<oac`>EXi71
+R8
+!i10b 1
+!s100 Ce_]04CU[gD?nZ`IGN@]X3
+I6N;kF2XQcnafbSngYWbh<2
+S1
+R9
+w1755707707
+8tb.sv
+Ftb.sv
+!i122 29
+L0 2 21
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+R6
+vtb_butterfly
+!s110 1755706751
+!i10b 1
+!s100 R8]O6A9h5R3o6S8`Qi7Ma1
+IJG21k<Z:c_O;6SML^[D?R0
+R9
+w1755574612
+R10
+R11
+!i122 12
+L0 70 24
+R12
+R13
+r1
+!s85 0
+31
+!s108 1755706751.000000
+R15
+!s90 -reportprogress|300|FFT_if.sv|pack.sv|tb.sv|RTL/FFT_top.v|RTL/butterfly.v|RTL/fft_2.v|RTL/fft_4.v|RTL/fft_8.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
